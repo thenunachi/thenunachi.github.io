@@ -11262,7 +11262,9 @@ p {
   opacity: 1;
   color: #fff;
 }
-
+.subtitle {
+  font-size: 20px;
+}
 .portfolio .portfolio-container .portfolio-item:hover .content-holder {
   opacity: 1;
   visibility: visible;
