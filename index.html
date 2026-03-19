@@ -416,9 +416,9 @@
 <section id="projects">
   <div class="sw">
     <div class="slabel">PORTFOLIO</div>
-    <h2>14+ things I've <em>shipped</em></h2>
+    <h2>13+ things I've <em>shipped</em></h2>
     <div class="filter-bar">
-      <button class="fb active" onclick="fp('all',this)">ALL (14)</button>
+      <button class="fb active" onclick="fp('all',this)">ALL (13)</button>
       <button class="fb" onclick="fp('fs',this)">FULL STACK</button>
       <button class="fb" onclick="fp('fe',this)">FRONTEND</button>
       <button class="fb" onclick="fp('api',this)">API INTEGRATION</button>
@@ -451,17 +451,6 @@
         </div>
       </div>
 
-      <div class="pc" data-tags="fs api">
-        <div class="pthumb"><img src="https://thenunachi.github.io/assets/imgs/fakebook.gif" alt="Shopping Cart" onerror="this.src='cart.gif'"/></div>
-        <div class="pb">
-          <span class="pbadge b-fs">FULL STACK</span>
-          <div class="pt">Online Shopping Cart</div>
-          <div class="pd">E-commerce app with product browsing, cart management, order tracking, real-time search, checkout modal, and order history. REST API with PostgreSQL on Render.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">REST API</span><span class="stack-tag">Render</span></div>
-          <div class="plinks"><a href="https://lnkd.in/gRDDEPYQ" class="pl" target="_blank">Live Demo ↗</a></div>
-        </div>
-      </div>
-
       <div class="pc" data-tags="fs">
         <div class="pthumb"><img src="cart.gif" alt="Inipagam Dessert App"/></div>
         <div class="pb">
@@ -485,7 +474,7 @@
       </div>
 
       <div class="pc" data-tags="fs">
-        <div class="pthumb"><img src="https://thenunachi.github.io/assets/imgs/fakebook.gif" alt="Fakebook" onerror="this.parentElement.textContent='📘'"/></div>
+        <div class="pthumb"><img src="fakebook.jpeg" alt="Fakebook"/></div>
         <div class="pb">
           <span class="pbadge b-fs">FULL STACK</span>
           <div class="pt">Fakebook</div>
@@ -496,7 +485,7 @@
       </div>
 
       <div class="pc" data-tags="fs">
-        <div class="pthumb"><img src="https://thenunachi.github.io/assets/imgs/ktsy.gif" alt="Buy-Ktsy" onerror="this.parentElement.textContent='🛍️'"/></div>
+        <div class="pthumb"><img src="buyktsy.jpeg" alt="Buy-Ktsy"/></div>
         <div class="pb">
           <span class="pbadge b-fs">FULL STACK</span>
           <div class="pt">Buy-Ktsy</div>
@@ -507,7 +496,7 @@
       </div>
 
       <div class="pc" data-tags="fs">
-        <div class="pthumb"><img src="https://thenunachi.github.io/assets/imgs/t-bnb (1).gif" alt="t-bnb" onerror="this.parentElement.textContent='🏠'"/></div>
+        <div class="pthumb"><img src="tbnb.jpeg" alt="t-bnb"/></div>
         <div class="pb">
           <span class="pbadge b-fs">FULL STACK</span>
           <div class="pt">t-bnb</div>
@@ -540,7 +529,7 @@
       </div>
 
       <div class="pc" data-tags="fe">
-        <div class="pthumb">🥁</div>
+        <div class="pthumb"><img src="drum.png" alt="Drum Machine"/></div>
         <div class="pb">
           <span class="pbadge b-fe">FRONTEND</span>
           <div class="pt">Drum Machine App</div>
@@ -602,13 +591,23 @@
           <a href="https://github.com/thenunachi" class="clink" target="_blank"><span class="cicon">&lt;/&gt;</span>github.com/thenunachi</a>
         </div>
       </div>
-      <div>
-        <form class="cf" onsubmit="hs(event)">
-          <div class="fg"><label class="fl">YOUR_NAME</label><input class="fi" type="text" placeholder="Jane Smith" required/></div>
-          <div class="fg"><label class="fl">YOUR_EMAIL</label><input class="fi" type="email" placeholder="jane@company.com" required/></div>
-          <div class="fg"><label class="fl">MESSAGE</label><textarea class="fi" placeholder="Tell me about the role or project..."></textarea></div>
-          <button type="submit" class="fsub">SEND_MESSAGE() →</button>
-        </form>
+      <div style="display:flex;flex-direction:column;justify-content:center;gap:20px;padding-top:12px;">
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:28px 24px;">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:.15em;margin-bottom:12px;">BEST WAY TO REACH ME</div>
+          <p style="font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:20px;">Send me a message on LinkedIn or drop me an email — I typically respond within 24 hours. I'm always open to hearing about interesting roles, projects, or collaborations.</p>
+          <a href="mailto:anbunachiappan@gmail.com" class="btn-p" style="display:inline-flex;font-size:13px;">Email me directly →</a>
+        </div>
+        <div style="background:linear-gradient(135deg,rgba(99,210,190,.05),rgba(79,156,249,.05));border:1px solid rgba(99,210,190,.2);border-radius:8px;padding:24px;">
+          <div style="font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:.15em;margin-bottom:10px;">CURRENTLY OPEN TO</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="font-family:var(--mono);font-size:11px;color:var(--text);background:var(--surface);border:1px solid var(--faint);border-radius:3px;padding:5px 12px;">Full Stack Roles</span>
+            <span style="font-family:var(--mono);font-size:11px;color:var(--text);background:var(--surface);border:1px solid var(--faint);border-radius:3px;padding:5px 12px;">Frontend Roles</span>
+            <span style="font-family:var(--mono);font-size:11px;color:var(--text);background:var(--surface);border:1px solid var(--faint);border-radius:3px;padding:5px 12px;">Backend Roles</span>
+            <span style="font-family:var(--mono);font-size:11px;color:var(--text);background:var(--surface);border:1px solid var(--faint);border-radius:3px;padding:5px 12px;">Remote</span>
+            <span style="font-family:var(--mono);font-size:11px;color:var(--text);background:var(--surface);border:1px solid var(--faint);border-radius:3px;padding:5px 12px;">Hybrid</span>
+            <span style="font-family:var(--mono);font-size:11px;color:var(--text);background:var(--surface);border:1px solid var(--faint);border-radius:3px;padding:5px 12px;">On-site Seattle</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
