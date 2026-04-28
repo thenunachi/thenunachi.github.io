@@ -3,7 +3,19 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Thenammai Nachiyappan — Full Stack Developer</title>
+<title>Thenammai Nachiyappan — Full Stack Developer | React, TypeScript, Python | Seattle, WA</title>
+<meta name="description" content="Thenammai Nachiyappan is a full stack developer in Seattle, WA with 9+ years of professional experience. Expert in React, TypeScript, Next.js, Node.js, and Python. Open to full-stack, frontend, and backend roles — remote or on-site Seattle." />
+<meta name="keywords" content="full stack developer Seattle, React developer Seattle, TypeScript developer, Next.js developer, Python developer, software engineer Seattle WA, hire full stack developer" />
+<meta property="og:title" content="Thenammai Nachiyappan — Full Stack Developer | Seattle, WA" />
+<meta property="og:description" content="Full stack developer with 9+ years experience. React, TypeScript, Next.js, Node.js, Python. Open to full-stack and frontend roles in Seattle or remote." />
+<meta property="og:url" content="https://thenunachi.github.io/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Thenammai Nachiyappan — Portfolio" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Thenammai Nachiyappan — Full Stack Developer | Seattle" />
+<meta name="twitter:description" content="Full stack developer in Seattle. React, TypeScript, Node.js, Python. 9+ years experience. Open to new roles." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://thenunachi.github.io/" />
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <style>
@@ -48,9 +60,6 @@
   .status-dot{width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulse 2s ease-in-out infinite}
   @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
   .hero-visual{position:relative;width:250px;height:250px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
-  .hero-orbit{position:absolute;inset:0;border:1px solid var(--border);border-radius:50%;animation:orbit 20s linear infinite}
-  .hero-orbit::after{content:'';position:absolute;top:-4px;left:50%;width:8px;height:8px;background:var(--accent);border-radius:50%;transform:translateX(-50%)}
-  @keyframes orbit{to{transform:rotate(360deg)}}
   .hero-avatar{width:195px;height:195px;border-radius:4px;object-fit:cover;border:2px solid var(--accent);filter:grayscale(20%) contrast(1.05)}
   .scroll-hint{position:absolute;bottom:40px;left:60px;display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em}
   .scroll-line{width:40px;height:1px;background:var(--muted);position:relative;overflow:hidden}
@@ -212,7 +221,6 @@
       </div>
     </div>
     <div class="hero-visual fu d3">
-      <div class="hero-orbit"></div>
       <img src="https://thenunachi.github.io/assets/imgs/profile.jpg" alt="Thenammai" class="hero-avatar" onerror="this.style.display='none'"/>
     </div>
   </div>
@@ -416,9 +424,9 @@
 <section id="projects">
   <div class="sw">
     <div class="slabel">PORTFOLIO</div>
-    <h2>16+ things I've <em>shipped</em></h2>
+    <h2>Selected work I've <em>shipped</em></h2>
     <div class="filter-bar">
-      <button class="fb active" onclick="fp('all',this)">ALL (16)</button>
+      <button class="fb active" onclick="fp('all',this)">ALL (9)</button>
       <button class="fb" onclick="fp('fs',this)">FULL STACK</button>
       <button class="fb" onclick="fp('fe',this)">FRONTEND</button>
       <button class="fb" onclick="fp('api',this)">API INTEGRATION</button>
@@ -426,50 +434,51 @@
     </div>
     <div class="pg">
 
-      <div class="pc feat" data-tags="fs api fe">
+      <!-- FEATURED: Plan-t Ahead — AI + full-stack, built solo -->
+      <div class="pc feat" data-tags="fs api">
         <div class="pfeat">
-          <div style="font-size:50px">🗺️</div>
-          <div class="pfeat-lbl">INTERACTIVE MAP<br/>MULTI-API INTEGRATION</div>
+          <div style="font-size:50px">🌱</div>
+          <div class="pfeat-lbl">AI-POWERED · FULL STACK<br/>BUILT SOLO END-TO-END</div>
         </div>
         <div class="pb">
-          <span class="pbadge b-orig">ORIGINAL — MOST COMPLEX PROJECT</span>
+          <span class="pbadge b-orig">FEATURED — AI + MAPS + FULL STACK</span>
+          <div class="pt">Plan-t Ahead</div>
+          <div class="pd">AI gardening companion built solo from scratch. Click anywhere on the world map to get the local climate zone and live 7-day forecast. Groq / Llama 3.3 generates full plant profiles on the fly — pH ranges, soil types, Gantt-style planting calendars, and companion guides. Zero loading spinners — AI response streams in real time.</div>
+          <div class="pstack"><span class="stack-tag">React 18</span><span class="stack-tag">Vite</span><span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span class="stack-tag">SQLAlchemy</span><span class="stack-tag">SQLite</span><span class="stack-tag">Groq API</span><span class="stack-tag">Leaflet</span><span class="stack-tag">Open-Meteo</span></div>
+          <div class="plinks"><a href="https://lnkd.in/gMC8_mrG" class="pl" target="_blank">Live Demo ↗</a></div>
+        </div>
+      </div>
+
+      <div class="pc" data-tags="nj fs api">
+        <div class="pthumb"><img src="read.gif" alt="KindleRead"/></div>
+        <div class="pb">
+          <span class="pbadge b-nj">NEXT.JS + FASTAPI + AI</span>
+          <div class="pt">KindleRead</div>
+          <div class="pd">Kindle-inspired reading platform with AI-powered book recommendations via Groq API. Scroll-based progress tracking and cross-device "resume reading" — built frontend, backend API, and AI integration solo.</div>
+          <div class="pstack"><span class="stack-tag">Next.js 14</span><span class="stack-tag">Tailwind CSS</span><span class="stack-tag">FastAPI</span><span class="stack-tag">Python</span><span class="stack-tag">SQLite</span><span class="stack-tag">Groq API</span><span class="stack-tag">Vercel</span></div>
+          <div class="plinks"><a href="https://lnkd.in/gQ5hBQrP" class="pl" target="_blank">Live Demo ↗</a></div>
+        </div>
+      </div>
+
+      <div class="pc" data-tags="fs api fe">
+        <div class="pthumb" style="display:flex;align-items:center;justify-content:center;font-size:42px;">🗺️</div>
+        <div class="pb">
+          <span class="pbadge b-orig">5 THIRD-PARTY APIS</span>
           <div class="pt">City Navigation & POI Explorer</div>
-          <div class="pd">Enter start/end locations, get turn-by-turn directions via OpenRouteService, and explore nearby museums, viewpoints, and historical spots via Overpass API. Tap any POI for a Wikipedia extract and image. Real-time voice feedback. Fully responsive.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">React-Leaflet</span><span class="stack-tag">OpenStreetMap</span><span class="stack-tag">OpenRouteService API</span><span class="stack-tag">Overpass API</span><span class="stack-tag">Nominatim API</span><span class="stack-tag">Wikipedia API</span></div>
+          <div class="pd">Turn-by-turn routing via OpenRouteService, nearby POI discovery via Overpass API, Wikipedia extracts, and real-time voice feedback — integrating 5 APIs into one seamless experience. Fully responsive mobile and desktop.</div>
+          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">React-Leaflet</span><span class="stack-tag">OpenRouteService API</span><span class="stack-tag">Overpass API</span><span class="stack-tag">Nominatim API</span><span class="stack-tag">Wikipedia API</span></div>
           <div class="plinks"><a href="https://lnkd.in/gJuDapi7" class="pl" target="_blank">Live Demo ↗</a></div>
         </div>
       </div>
 
-      <div class="pc" data-tags="nj api fe">
-        <div class="pthumb"><img src="converter.jpeg" alt="Currency Converter"/></div>
-        <div class="pb">
-          <span class="pbadge b-nj">NEXT.JS + TYPESCRIPT</span>
-          <div class="pt">Currency Converter</div>
-          <div class="pd">Live currency converter using a REST exchange-rate API. Built with Next.js and TypeScript, styled with Tailwind CSS. Solved env variable challenges for Vercel client-side deployment.</div>
-          <div class="pstack"><span class="stack-tag">Next.js</span><span class="stack-tag">TypeScript</span><span class="stack-tag">Tailwind CSS</span><span class="stack-tag">REST API</span><span class="stack-tag">Vercel</span></div>
-          <div class="plinks"><a href="https://lnkd.in/gdC4mUdD" class="pl" target="_blank">Live Demo ↗</a></div>
-        </div>
-      </div>
-
       <div class="pc" data-tags="fs">
-        <div class="pthumb"><img src="cart.gif" alt="Inipagam Dessert App"/></div>
+        <div class="pthumb"><img src="snake.gif" alt="Snake Game"/></div>
         <div class="pb">
-          <span class="pbadge b-fs">FULL STACK</span>
-          <div class="pt">Inipagam — Dessert Ordering App</div>
-          <div class="pd">Full-stack dessert ordering platform with user authentication, product listings, and order management. React on Vercel, Flask + PostgreSQL on Render.</div>
-          <div class="pstack"><span class="stack-tag">React.js</span><span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">Vercel</span><span class="stack-tag">Render</span></div>
-          <div class="plinks"><a href="#" class="pl gh">View Project</a></div>
-        </div>
-      </div>
-
-      <div class="pc" data-tags="fs api">
-        <div class="pthumb"><img src="rec.gif" alt="Recipe Manager"/></div>
-        <div class="pb">
-          <span class="pbadge b-fs">FULL STACK</span>
-          <div class="pt">Recipe Manager</div>
-          <div class="pd">Add and browse recipes with ingredients, prep time, and images. Flask REST API with CORS. Environment-variable-driven deployment across Vercel + Render.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">CORS</span><span class="stack-tag">Vercel</span></div>
-          <div class="plinks"><a href="https://lnkd.in/gzRMXmUn" class="pl" target="_blank">Live Demo ↗</a></div>
+          <span class="pbadge b-fs">FULL STACK + AUTH</span>
+          <div class="pt">Snake Game</div>
+          <div class="pd">Nokia nostalgia meets modern architecture. JWT auth, bcrypt-secured accounts, persistent high scores via PostgreSQL, and real-time leaderboards. Built frontend, backend, auth, and CI/CD pipeline solo.</div>
+          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">Vite</span><span class="stack-tag">FastAPI</span><span class="stack-tag">Python</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">JWT</span><span class="stack-tag">bcrypt</span><span class="stack-tag">Vercel</span></div>
+          <div class="plinks"><a href="https://lnkd.in/gQd9r6tN" class="pl" target="_blank">Live Demo ↗</a></div>
         </div>
       </div>
 
@@ -478,7 +487,7 @@
         <div class="pb">
           <span class="pbadge b-fs">FULL STACK</span>
           <div class="pt">Fakebook</div>
-          <div class="pd">Social networking app with posts, comments, reactions, and connections. Real-time WebSocket updates. Relational PostgreSQL database.</div>
+          <div class="pd">Social networking platform with real-time posts, comments, reactions, and WebSocket-powered chat. Fully relational PostgreSQL database with Flask REST API backend.</div>
           <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">Redux</span><span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">WebSocket</span></div>
           <div class="plinks"><a href="https://fakebook-wu2b.onrender.com/" class="pl" target="_blank">Live Demo ↗</a></div>
         </div>
@@ -489,7 +498,7 @@
         <div class="pb">
           <span class="pbadge b-fs">FULL STACK</span>
           <div class="pt">Buy-Ktsy</div>
-          <div class="pd">Etsy-inspired marketplace with seller listings, buyer purchases, and product reviews. Full CRUD with image uploads.</div>
+          <div class="pd">Etsy-inspired marketplace with product listings, purchases, review system, and shopping cart. Full CRUD with image uploads and real-time search.</div>
           <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">Redux</span><span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span class="stack-tag">SQLAlchemy</span><span class="stack-tag">PostgreSQL</span></div>
           <div class="plinks"><a href="https://ktsy.onrender.com/" class="pl" target="_blank">Live Demo ↗</a></div>
         </div>
@@ -500,110 +509,34 @@
         <div class="pb">
           <span class="pbadge b-fs">FULL STACK</span>
           <div class="pt">t-bnb</div>
-          <div class="pd">Airbnb-inspired booking platform — list properties, book stays, manage reservations, write reviews. Date-range selection and full auth.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">Redux</span><span class="stack-tag">Express</span><span class="stack-tag">Sequelize</span><span class="stack-tag">PostgreSQL</span></div>
+          <div class="pd">Airbnb-inspired vacation rental platform with property listings, date-range booking, review systems, and full user authentication.</div>
+          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">Redux</span><span class="stack-tag">Node.js</span><span class="stack-tag">Express</span><span class="stack-tag">Sequelize</span><span class="stack-tag">PostgreSQL</span></div>
           <div class="plinks"><a href="https://tbnb.onrender.com/" class="pl" target="_blank">Live Demo ↗</a></div>
         </div>
       </div>
 
-      <div class="pc" data-tags="fe">
-        <div class="pthumb"><img src="task.gif" alt="Real-Time Task Manager"/></div>
+      <div class="pc" data-tags="nj api fe">
+        <div class="pthumb"><img src="converter.jpeg" alt="Currency Converter"/></div>
         <div class="pb">
-          <span class="pbadge b-fe">FRONTEND</span>
-          <div class="pt">Real-Time Task Manager</div>
-          <div class="pd">Add, edit, delete tasks in real time. Auto-saves via Local Storage — no data lost on refresh. Clean UI demonstrating state management and event handling.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">JavaScript</span><span class="stack-tag">Local Storage</span><span class="stack-tag">CSS3</span></div>
-          <div class="plinks"><a href="#" class="pl gh">View Project</a></div>
-        </div>
-      </div>
-
-      <div class="pc" data-tags="fe">
-        <div class="pthumb"><img src="calci.gif" alt="Calculator"/></div>
-        <div class="pb">
-          <span class="pbadge b-fe">FRONTEND</span>
-          <div class="pt">Calculator App</div>
-          <div class="pd">Fully functional calculator with styled buttons and CSS layout. Uses useState to manage display and calculations dynamically. Clean input tag showing numbers and results in real time.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">JavaScript</span><span class="stack-tag">useState</span><span class="stack-tag">CSS3</span></div>
-          <div class="plinks"><a href="#" class="pl gh">View Project</a></div>
-        </div>
-      </div>
-
-      <div class="pc" data-tags="fe">
-        <div class="pthumb"><img src="drum.png" alt="Drum Machine"/></div>
-        <div class="pb">
-          <span class="pbadge b-fe">FRONTEND</span>
-          <div class="pt">Drum Machine App</div>
-          <div class="pd">9 drum pads triggered by click or keyboard. Sound name displayed dynamically. Audio clips mapped with unique keys for scalability.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">JavaScript</span><span class="stack-tag">React Hooks</span><span class="stack-tag">HTML5 Audio</span></div>
-          <div class="plinks"><a href="https://lnkd.in/g79YvA4g" class="pl" target="_blank">Live Demo ↗</a></div>
-        </div>
-      </div>
-
-      <div class="pc" data-tags="fe">
-        <div class="pthumb"><img src="rajini.gif" alt="Rajinikanth Quote Machine"/></div>
-        <div class="pb">
-          <span class="pbadge b-fe">FRONTEND</span>
-          <div class="pt">Rajinikanth Quote Machine</div>
-          <div class="pd">Random quote generator featuring iconic Rajinikanth movie quotes. Dynamic rendering, React state management, and interactive UI.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">JavaScript</span><span class="stack-tag">useState</span><span class="stack-tag">useEffect</span></div>
-          <div class="plinks"><a href="https://lnkd.in/gK4GBEPr" class="pl" target="_blank">Live Demo ↗</a></div>
-        </div>
-      </div>
-
-      <div class="pc" data-tags="fe">
-        <div class="pthumb"><img src="css.gif" alt="Image Carousel"/></div>
-        <div class="pb">
-          <span class="pbadge b-fe">FRONTEND</span>
-          <div class="pt">3D Image Carousel</div>
-          <div class="pd">Dynamic image carousel with a visually appealing 3D CSS effect. Built using useState to manage the current image index and props for reusable component design. Creative animations with CSS transforms.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">JavaScript</span><span class="stack-tag">useState</span><span class="stack-tag">CSS 3D</span><span class="stack-tag">Props</span></div>
-          <div class="plinks"><a href="#" class="pl gh">View Project</a></div>
-        </div>
-      </div>
-
-      <div class="pc" data-tags="fe">
-        <div class="pthumb"><img src="clock.gif" alt="Clock App"/></div>
-        <div class="pb">
-          <span class="pbadge b-fe">FRONTEND</span>
-          <div class="pt">Interactive Clock App</div>
-          <div class="pd">Analog clock app using React and JavaScript. Leverages the Date object to dynamically fetch current hours, minutes, and seconds for live clock hands. Features a fun "Find the Odd One Out" challenge — only one clock shows the real time.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">JavaScript</span><span class="stack-tag">useState</span><span class="stack-tag">useEffect</span><span class="stack-tag">Date API</span></div>
-          <div class="plinks"><a href="#" class="pl gh">View Project</a></div>
+          <span class="pbadge b-nj">NEXT.JS + TYPESCRIPT</span>
+          <div class="pt">Currency Converter</div>
+          <div class="pd">Live currency converter with REST exchange-rate API. Built with Next.js and TypeScript, deployed on Vercel. Tackled client-side env variable handling for production API access.</div>
+          <div class="pstack"><span class="stack-tag">Next.js</span><span class="stack-tag">TypeScript</span><span class="stack-tag">Tailwind CSS</span><span class="stack-tag">REST API</span><span class="stack-tag">Vercel</span></div>
+          <div class="plinks"><a href="https://lnkd.in/gdC4mUdD" class="pl" target="_blank">Live Demo ↗</a></div>
         </div>
       </div>
 
       <div class="pc" data-tags="fs api">
-        <div class="pthumb"><img src="plant.gif" alt="Plan-t Ahead"/></div>
+        <div class="pthumb"><img src="rec.gif" alt="Recipe Manager"/></div>
         <div class="pb">
           <span class="pbadge b-fs">FULL STACK</span>
-          <div class="pt">Plan-t Ahead</div>
-          <div class="pd">AI-powered gardening companion. Click anywhere on the world map to get the climate zone and live 7-day forecast. AI search (Groq / Llama 3.3) generates full plant profiles on the fly — pH ranges, soil types, Gantt-style planting calendars, and companion guides.</div>
-          <div class="pstack"><span class="stack-tag">React 18</span><span class="stack-tag">Vite</span><span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span class="stack-tag">SQLAlchemy</span><span class="stack-tag">SQLite</span><span class="stack-tag">Groq API</span><span class="stack-tag">Leaflet</span><span class="stack-tag">Open-Meteo</span></div>
-          <div class="plinks"><a href="https://lnkd.in/gMC8_mrG" class="pl" target="_blank">Live Demo ↗</a></div>
+          <div class="pt">Recipe Manager</div>
+          <div class="pd">Add and browse recipes with ingredients, prep time, and images. Flask REST API with CORS, environment-variable-driven deployment across Vercel and Render.</div>
+          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">CORS</span><span class="stack-tag">Vercel</span></div>
+          <div class="plinks"><a href="https://lnkd.in/gzRMXmUn" class="pl" target="_blank">Live Demo ↗</a></div>
         </div>
       </div>
 
-      <div class="pc" data-tags="fs">
-        <div class="pthumb"><img src="snake.gif" alt="Snake Game"/></div>
-        <div class="pb">
-          <span class="pbadge b-fs">FULL STACK</span>
-          <div class="pt">Snake Game</div>
-          <div class="pd">Nokia-nostalgia meets modern architecture. Full-stack snake game with JWT authentication, bcrypt-secured accounts, persistent high scores via PostgreSQL, and real-time leaderboards. Built with React + Vite on the frontend and FastAPI on the backend.</div>
-          <div class="pstack"><span class="stack-tag">React</span><span class="stack-tag">Vite</span><span class="stack-tag">FastAPI</span><span class="stack-tag">Python</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">JWT</span><span class="stack-tag">bcrypt</span><span class="stack-tag">Vercel</span></div>
-          <div class="plinks"><a href="https://lnkd.in/gQd9r6tN" class="pl" target="_blank">Live Demo ↗</a></div>
-        </div>
-      </div>
-
-      <div class="pc" data-tags="nj fs api">
-        <div class="pthumb"><img src="read.gif" alt="KindleRead"/></div>
-        <div class="pb">
-          <span class="pbadge b-nj">NEXT.JS + FASTAPI</span>
-          <div class="pt">KindleRead</div>
-          <div class="pd">Kindle-inspired reading platform that knows what you should read next. Groq API powers an instant book suggestion engine with zero analysis paralysis. Features scroll-based progress tracking and cross-device "resume reading" via FastAPI + SQLite.</div>
-          <div class="pstack"><span class="stack-tag">Next.js 14</span><span class="stack-tag">Tailwind CSS</span><span class="stack-tag">FastAPI</span><span class="stack-tag">Python</span><span class="stack-tag">SQLite</span><span class="stack-tag">Groq API</span><span class="stack-tag">Vercel</span></div>
-          <div class="plinks"><a href="https://lnkd.in/gQ5hBQrP" class="pl" target="_blank">Live Demo ↗</a></div>
-        </div>
-      </div>
       </div>
 
     </div>
